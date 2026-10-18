@@ -1,0 +1,16 @@
+{
+  "name": "samuel-makotsi-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Portfolio website for Samuel Makotsi with Vercel serverless contact form.",
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve ."
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.14"
+  }
+}

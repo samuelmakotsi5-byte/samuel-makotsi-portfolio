@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Samuel Makotsi | Full Stack Developer in Nairobi, Kenya</title>
+  <meta name="description" content="Samuel Makotsi is a Full Stack Developer and founder of Kivora Digital Forge. Building digital experiences from Kenya to the world.">
+  <meta name="theme-color" content="#0a0a0b">
+  <meta name="color-scheme" content="dark">
+  <meta property="og:title" content="Samuel Makotsi | Full Stack Developer">
+  <meta property="og:description" content="Building digital experiences from Kenya to the world.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://samuelmakotsi.dev/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%230a0a0b'/%3E%3Ctext x='32' y='42' font-family='Arial' font-size='28' font-weight='700' text-anchor='middle' fill='%23a3ff12'%3ESM%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Samuel Makotsi",
+    "jobTitle": "Full Stack Developer",
+    "email": "mailto:samuelmakotsi5@gmail.com",
+    "telephone": "+254704262903",
+    "url": "https://github.com/samuelmakotsi5-byte",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Utawala, Nairobi",
+      "addressCountry": "KE"
+    }
+  }
+  </script>
+  <style>
+    :root{
+      --bg:#0a0a0b; --card:#141416; --border:#232326; --text:#f5f5f5; --muted:#9ca3af;
+      --lime:#a3ff12; --wa:#25D366; --purple:#7c3aed; --radius:24px;
+      --sans:'Space Grotesk',system-ui,-apple-system,'Segoe UI',sans-serif;
+      --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+    }
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:96px}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+    a{color:inherit;text-decoration:none}
+    img,svg{display:block;max-width:100%}
+    :focus-visible{outline:2px solid var(--lime);outline-offset:3px;border-radius:8px}
+    .wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+    .nav{position:sticky;top:14px;z-index:50;width:min(1120px,100% - 28px);margin:14px auto 0;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 12px 10px 22px;border:1px solid rgba(255,255,255,.08);border-radius:999px;background:rgba(20,20,22,.6);-webkit-backdrop-filter:blur(16px) saturate(150%);backdrop-filter:blur(16px) saturate(150%);box-shadow:0 10px 40px -12px rgba(0,0,0,.6)}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:600;letter-spacing:-.01em}
+    .brand i{width:9px;height:9px;border-radius:50%;background:var(--lime);box-shadow:0 0 14px var(--lime)}
+    .nav ul{display:flex;gap:6px;list-style:none;margin:0;padding:0}
+    .nav ul a{display:block;padding:8px 14px;border-radius:999px;color:var(--muted);font-size:.95rem;transition:color .2s,background .2s}
+    .nav ul a:hover{color:var(--text);background:rgba(255,255,255,.06)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 26px;border-radius:999px;border:1px solid transparent;font:600 1rem var(--sans);cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s,border-color .2s}
+    .btn:hover{transform:translateY(-2px)}
+    .btn svg{width:20px;height:20px}
+    .btn-lime{background:var(--lime);color:#0a0a0b;box-shadow:0 10px 34px -10px rgba(163,255,18,.6)}
+    .btn-lime:hover{box-shadow:0 14px 40px -10px rgba(163,255,18,.8)}
+    .btn-wa{background:var(--wa);color:#04210f;box-shadow:0 10px 34px -12px rgba(37,211,102,.6)}
+    .btn-wa:hover{box-shadow:0 14px 40px -12px rgba(37,211,102,.8)}
+    .btn-sm{padding:10px 20px;font-size:.92rem}
+    .btn[disabled]{opacity:.6;cursor:wait;transform:none}
+    .hero{position:relative;overflow:hidden;padding:88px 0 110px}
+    .hero::before{content:"";position:absolute;inset:-10% -10% auto auto;width:760px;height:760px;background:radial-gradient(closest-side,rgba(124,58,237,.38),transparent);pointer-events:none}
+    .hero::after{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--border) 1px,transparent 1px),linear-gradient(90deg,var(--border) 1px,transparent 1px);background-size:64px 64px;opacity:.35;-webkit-mask-image:radial-gradient(ellipse 70% 60% at 50% 30%,#000,transparent);mask-image:radial-gradient(ellipse 70% 60% at 50% 30%,#000,transparent);pointer-events:none}
+    .hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center}
+    h1{margin:0;font-size:clamp(2.6rem,6.2vw,4.7rem);line-height:1.02;letter-spacing:-.04em;font-weight:700;text-wrap:balance}
+    .lead{margin:26px 0 0;max-width:46ch;color:var(--muted);font-size:1.15rem}
+    .cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:38px}
+    .meta{margin-top:34px;font:400 .88rem var(--mono);color:var(--muted)}
+    .meta a{border-bottom:1px solid var(--border);transition:color .2s,border-color .2s}
+    .meta a:hover{color:var(--lime);border-color:var(--lime)}
+    .profile{border:1px solid var(--border);border-radius:var(--radius);background:linear-gradient(180deg,rgba(20,20,22,.92),rgba(20,20,22,.7));-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:0 30px 80px -30px rgba(124,58,237,.55),0 2px 0 rgba(255,255,255,.04) inset;overflow:hidden}
+    .profile-head{display:flex;align-items:center;gap:16px;padding:22px 24px;border-bottom:1px solid var(--border)}
+    #profile{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-size:1.35rem;color:#0a0a0b;background:linear-gradient(135deg,var(--purple),#c4b5fd 50%,var(--lime));box-shadow:0 0 0 4px var(--card),0 0 0 5px var(--border),0 10px 30px -8px rgba(124,58,237,.8)}
+    .profile-head strong{display:block;font-size:1.15rem;letter-spacing:-.01em}
+    .where{display:flex;align-items:center;gap:9px;color:var(--muted);font-size:.92rem}
+    .pulse{position:relative;width:9px;height:9px;border-radius:50%;background:var(--lime)}
+    .pulse::after{content:"";position:absolute;inset:0;border-radius:50%;background:var(--lime);opacity:.6}
+    @media (prefers-reduced-motion:no-preference){
+      .pulse::after{animation:pulse 2s ease-out infinite}
+      @keyframes pulse{0%{transform:scale(1);opacity:.6}100%{transform:scale(3.2);opacity:0}}
+    }
+    pre{margin:0;padding:24px;font:400 .9rem/1.8 var(--mono);color:#d4d4d8;overflow-x:auto}
+    .k{color:#c4b5fd}.s{color:var(--lime)}.p{color:#6b7280}
+    section{padding:100px 0}
+    .head{max-width:56ch;margin-bottom:52px}
+    h2{margin:0;font-size:clamp(2rem,4.4vw,3rem);line-height:1.08;letter-spacing:-.035em;font-weight:700}
+    .head p{margin:16px 0 0;color:var(--muted);font-size:1.1rem}
+    .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+    .project{display:flex;flex-direction:column;border:1px solid var(--border);border-radius:var(--radius);background:var(--card);overflow:hidden;box-shadow:0 20px 50px -30px rgba(0,0,0,.9);transition:transform .3s,border-color .3s,box-shadow .3s}
+    .project:hover{transform:translateY(-6px);border-color:#3a3a40;box-shadow:0 30px 70px -30px rgba(124,58,237,.5)}
+    .shot{padding:34px 34px 0}
+    .shot.a{background:linear-gradient(135deg,#3b1d8a,var(--purple) 55%,#a78bfa)}
+    .shot.b{background:linear-gradient(135deg,#312e81,var(--purple) 50%,#7fd11a)}
+    .browser{border-radius:14px 14px 0 0;background:rgba(10,10,11,.88);box-shadow:0 -10px 40px rgba(0,0,0,.3);overflow:hidden;border:1px solid rgba(255,255,255,.14);border-bottom:0}
+    .bar{display:flex;align-items:center;gap:6px;padding:10px 14px;border-bottom:1px solid rgba(255,255,255,.08)}
+    .bar i{width:9px;height:9px;border-radius:50%;background:#3f3f46}
+    .bar span{margin-left:10px;padding:2px 10px;border-radius:6px;background:rgba(255,255,255,.07);font:400 .72rem var(--mono);color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .page{padding:20px;display:grid;gap:10px}
+    .page b{display:block;height:14px;width:62%;border-radius:6px;background:rgba(255,255,255,.28)}
+    .page u{display:block;height:8px;border-radius:5px;background:rgba(255,255,255,.1)}
+    .page em{display:block;width:96px;height:30px;margin-top:6px;border-radius:999px;background:var(--lime)}
+    .project-body{padding:28px;display:flex;flex-direction:column;flex:1}
+    .project h3{margin:0;font-size:1.45rem;letter-spacing:-.025em}
+    .project p{margin:10px 0 24px;color:var(--muted)}
+    .visit{margin-top:auto;display:inline-flex;align-items:center;gap:8px;font-weight:600;color:var(--lime)}
+    .visit svg{width:16px;height:16px;transition:transform .2s}
+    .project:hover .visit svg{transform:translate(3px,-3px)}
+    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .card{padding:32px;border:1px solid var(--border);border-radius:var(--radius);background:var(--card);transition:transform .3s,border-color .3s}
+    .card:hover{transform:translateY(-4px);border-color:#3a3a40}
+    .ico{width:48px;height:48px;display:grid;place-items:center;margin-bottom:22px;border-radius:14px;border:1px solid rgba(124,58,237,.45);background:rgba(124,58,237,.14);color:#c4b5fd}
+    .ico svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+    .card h3{margin:0 0 8px;font-size:1.25rem;letter-spacing:-.02em}
+    .card p{margin:0;color:var(--muted)}
+    .stack{display:flex;flex-wrap:wrap;gap:10px;margin-top:40px}
+    .stack span{padding:8px 16px;border:1px solid var(--border);border-radius:999px;background:var(--card);font:400 .85rem var(--mono);color:#d4d4d8}
+    .contact{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px;align-items:start}
+    .panel{padding:34px;border:1px solid var(--border);border-radius:var(--radius);background:var(--card);box-shadow:0 20px 50px -30px rgba(0,0,0,.9)}
+    .rows{display:grid;gap:6px;margin:26px 0 30px}
+    .row{display:flex;align-items:center;gap:16px;padding:14px;border-radius:16px;transition:background .2s}
+    a.row:hover{background:rgba(255,255,255,.05)}
+    .row .ico{margin:0;width:44px;height:44px;flex:none}
+    .row small{display:block;color:var(--muted);font-size:.82rem}
+    .row span{font-weight:500;word-break:break-word}
+    form{display:grid;gap:18px}
+    label{display:grid;gap:8px;font-size:.92rem;color:var(--muted)}
+    input,textarea{width:100%;padding:14px 16px;border:1px solid var(--border);border-radius:14px;background:var(--bg);color:var(--text);font:400 1rem var(--sans);transition:border-color .2s,box-shadow .2s}
+    input::placeholder,textarea::placeholder{color:#52525b}
+    input:focus,textarea:focus{outline:0;border-color:var(--purple);box-shadow:0 0 0 4px rgba(124,58,237,.25)}
+    textarea{min-height:140px;resize:vertical}
+    .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+    #status{min-height:1.4em;font-size:.92rem;color:var(--muted)}
+    #status.ok{color:var(--lime)}
+    #status.err{color:#fca5a5}
+    footer{padding:34px 0 48px;border-top:1px solid var(--border);color:var(--muted);font-size:.92rem}
+    footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+    @media (max-width:900px){
+      .hero{padding:56px 0 80px}
+      .hero .wrap,.contact{grid-template-columns:1fr}
+      .hero .wrap{gap:48px}
+      .grid2,.grid3{grid-template-columns:1fr}
+      section{padding:72px 0}
+      .nav ul{display:none}
+    }
+    @media (max-width:480px){
+      .cta .btn{width:100%}
+      .shot{padding:24px 20px 0}
+      .panel{padding:24px}
+    }
+    @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+  </style>
+</head>
+<body>
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="#top"><i></i>Samuel Makotsi</a>
+    <ul>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn btn-lime btn-sm" href="#contact">Hire me</a>
+  </nav>
+
+  <main id="top">
+    <header class="hero">
+      <div class="wrap">
+        <div>
+          <h1>Building digital experiences from Kenya to the world</h1>
+          <p class="lead">Full Stack Developer and founder of Kivora Digital Forge. I build fast, modern &amp; secure web apps from Utawala, Nairobi.</p>
+          <div class="cta">
+            <a class="btn btn-lime" href="#work">View my work</a>
+            <a class="btn btn-wa" href="https://wa.me/254704262903" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1 0 12.04 2Zm0 18.1a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3.08.88.9-3-.2-.31A8.2 8.2 0 1 1 12.04 20.1Zm4.5-6.15c-.25-.12-1.46-.72-1.69-.8-.23-.09-.39-.12-.56.12-.16.25-.64.8-.78.97-.14.16-.29.18-.54.06a6.7 6.7 0 0 1-3.34-2.92c-.25-.43.25-.4.72-1.33.08-.16.04-.3-.02-.42-.06-.12-.56-1.35-.77-1.85-.2-.48-.4-.42-.56-.43h-.47c-.16 0-.43.06-.66.3-.23.25-.87.85-.87 2.08s.9 2.41 1.02 2.58c.12.16 1.75 2.67 4.24 3.75 1.58.68 2.2.74 3 .62.49-.07 1.46-.6 1.67-1.17.2-.58.2-1.07.14-1.17-.06-.1-.23-.16-.47-.28Z"/></svg>
+              Chat on WhatsApp
+            </a>
+          </div>
+          <p class="meta">github.com/<a href="https://github.com/samuelmakotsi5-byte" target="_blank" rel="noopener noreferrer">samuelmakotsi5-byte</a></p>
+        </div>
+
+        <aside class="profile" aria-label="Profile card">
+          <div class="profile-head">
+            <div id="profile" role="img" aria-label="Samuel Makotsi">SM</div>
+            <div>
+              <strong>Samuel Makotsi</strong>
+              <span class="where"><span class="pulse"></span>Utawala, Nairobi</span>
+            </div>
+          </div>
+          <pre><code><span class="k">const</span> samuel <span class="p">=</span> <span class="p">{</span>
+  role<span class="p">:</span>     <span class="s">"Full Stack Developer"</span><span class="p">,</span>
+  founder<span class="p">:</span>  <span class="s">"Kivora Digital Forge"</span><span class="p">,</span>
+  location<span class="p">:</span> <span class="s">"Nairobi, Kenya"</span><span class="p">,</span>
+  builds<span class="p">:</span>   <span class="p">[</span><span class="s">"fast"</span><span class="p">,</span> <span class="s">"modern"</span><span class="p">,</span> <span class="s">"secure"</span><span class="p">],</span>
+<span class="p">};</span></code></pre>
+        </aside>
+      </div>
+    </header>
+
+    <section id="work">
+      <div class="wrap">
+        <div class="head">
+          <h2>Selected work</h2>
+          <p>Live projects you can open and click through right now.</p>
+        </div>
+
+        <div class="grid2">
+          <a class="project" href="https://kivora-digital-forge.vercel.app" target="_blank" rel="noopener noreferrer">
+            <div class="shot a">
+              <div class="browser">
+                <div class="bar"><i></i><i></i><i></i><span>kivora-digital-forge.vercel.app</span></div>
+                <div class="page"><b></b><u style="width:100%"></u><u style="width:84%"></u><em></em></div>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Kivora Digital Forge</h3>
+              <p>The web presence for my agency: services, process and a clear way to get in touch.</p>
+              <span class="visit">Visit live site
+                <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 5H5.5A1.5 1.5 0 0 0 4 6.5v8A1.5 1.5 0 0 0 5.5 16h8a1.5 1.5 0 0 0 1.5-1.5V12"/><path d="M11 4h5v5M16 4l-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <a class="project" href="https://furni-style-demo.vercel.app" target="_blank" rel="noopener noreferrer">
+            <div class="shot b">
+              <div class="browser">
+                <div class="bar"><i></i><i></i><i></i><span>furni-style-demo.vercel.app</span></div>
+                <div class="page"><b style="width:48%"></b><u style="width:100%"></u><u style="width:72%"></u><em></em></div>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Furni-Style E-commerce</h3>
+              <p>A furniture storefront demo with product browsing built for fast, smooth shopping.</p>
+              <span class="visit">Visit live site
+                <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 5H5.5A1.5 1.5 0 0 0 4 6.5v8A1.5 1.5 0 0 0 5.5 16h8a1.5 1.5 0 0 0 1.5-1.5V12"/><path d="M11 4h5v5M16 4l-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="wrap">
+        <div class="head">
+          <h2>What I build</h2>
+          <p>From the first line of code to a live site your customers can use.</p>
+        </div>
+
+        <div class="grid3">
+          <div class="card">
+            <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 8-5 4 5 4M16 8l5 4-5 4M14 5l-4 14"/></svg></div>
+            <h3>Full stack web apps</h3>
+            <p>Fast interfaces backed by clean APIs, built to grow with your business.</p>
+          </div>
+          <div class="card">
+            <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1.5 1.5 0 0 0 1.5 1.2h8.3a1.5 1.5 0 0 0 1.5-1.1L20 8H6.2"/><circle cx="9.5" cy="20" r="1.2"/><circle cx="17" cy="20" r="1.2"/></svg></div>
+            <h3>Business sites and shops</h3>
+            <p>Websites and online stores for local businesses, with WhatsApp built in.</p>
+          </div>
+          <div class="card">
+            <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v5.5c0 4.4 3 7.9 7 9.5 4-1.6 7-5.1 7-9.5V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></svg></div>
+            <h3>Secure by default</h3>
+            <p>Cybersecurity is part of how I study and build, so safety is not an afterthought.</p>
+          </div>
+        </div>
+
+        <div class="stack" aria-label="Tools">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Tailwind CSS</span><span>Node.js</span><span>Vercel</span><span>Git</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="head">
+          <h2>Let’s build something</h2>
+          <p>Tell me what you need. I reply fastest on WhatsApp.</p>
+        </div>
+
+        <div class="contact">
+          <div class="panel">
+            <div class="rows">
+              <a class="row" href="https://wa.me/254704262903" target="_blank" rel="noopener noreferrer">
+                <div class="ico" style="color:var(--wa);border-color:rgba(37,211,102,.4);background:rgba(37,211,102,.12)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 0 1-11.8 7L4 20l1.1-4A8 8 0 1 1 20 12Z"/><path d="M9 9c0 3 3 6 6 6l1-1.5-2-1-1 .7c-.8-.4-1.5-1.1-1.9-1.9l.7-1-1-2L9 9Z"/></svg></div>
+                <div><small>WhatsApp</small><span>0704 262 903</span></div>
+              </a>
+              <a class="row" href="mailto:samuelmakotsi5@gmail.com">
+                <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div>
+                <div><small>Email</small><span>samuelmakotsi5@gmail.com</span></div>
+              </a>
+              <a class="row" href="https://github.com/samuelmakotsi5-byte" target="_blank" rel="noopener noreferrer">
+                <div class="ico"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg></div>
+                <div><small>GitHub</small><span>samuelmakotsi5-byte</span></div>
+              </a>
+              <div class="row">
+                <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg></div>
+                <div><small>Location</small><span>Utawala, Nairobi, Kenya</span></div>
+              </div>
+            </div>
+            <a class="btn btn-wa" href="https://wa.me/254704262903" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+          </div>
+
+          <div class="panel">
+            <form id="contact-form" novalidate aria-label="Contact form">
+              <label for="name">Your name
+                <input id="name" type="text" name="name" autocomplete="name" placeholder="Jane Wanjiku" required aria-required="true" aria-invalid="false">
+              </label>
+              <label for="email">Your email
+                <input id="email" type="email" name="email" autocomplete="email" placeholder="jane@example.com" required aria-required="true" aria-invalid="false">
+              </label>
+              <label for="message">What do you need built?
+                <textarea id="message" name="message" placeholder="A short description of your project" required aria-required="true" aria-invalid="false"></textarea>
+              </label>
+              <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+              <button class="btn btn-lime" type="submit" id="send">Send message</button>
+              <p id="status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>&copy; <span id="year">2026</span> Samuel Makotsi</span>
+      <span>Nairobi, Kenya</span>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const yearNode = document.getElementById('year');
+      if (yearNode) yearNode.textContent = new Date().getFullYear();
+
+      const form = document.getElementById('contact-form');
+      const btn = document.getElementById('send');
+      const status = document.getElementById('status');
+
+      function setStatus(text, kind) {
+        status.textContent = text;
+        status.className = kind || '';
+      }
+
+      function setFieldValidity(name, valid) {
+        const field = form.querySelector('[name="' + name + '"]');
+        if (field) field.setAttribute('aria-invalid', String(!valid));
+      }
+
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+
+        const data = Object.fromEntries(new FormData(form).entries());
+        if (data.website) return;
+
+        const name = (data.name || '').trim();
+        const email = (data.email || '').trim();
+        const message = (data.message || '').trim();
+
+        const validName = name.length > 1;
+        const validEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        const validMessage = message.length > 10;
+
+        setFieldValidity('name', validName);
+        setFieldValidity('email', validEmail);
+        setFieldValidity('message', validMessage);
+
+        if (!validName || !validEmail || !validMessage) {
+          setStatus('Please fill in your name, a valid email, and a message longer than 10 characters.', 'err');
+          return;
+        }
+
+        btn.disabled = true;
+        setStatus('Sending your message...');
+
+        try {
+          const res = await fetch('/api/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ name, email, message })
+          });
+
+          const payload = await res.json().catch(() => ({}));
+          if (!res.ok) throw new Error(payload.error || 'Request failed');
+
+          form.reset();
+          ['name', 'email', 'message'].forEach(function (fieldName) {
+            setFieldValidity(fieldName, true);
+          });
+
+          setStatus('Message sent. I will get back to you soon.', 'ok');
+        } catch (err) {
+          setStatus('The server did not respond, so your email app is opening instead.', 'err');
+          const body = 'Name: ' + name + '\nEmail: ' + email + '\n\n' + message;
+          window.location.href = 'mailto:samuelmakotsi5@gmail.com?subject=' +
+            encodeURIComponent('Portfolio enquiry from ' + name) +
+            '&body=' + encodeURIComponent(body);
+        } finally {
+          btn.disabled = false;
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
